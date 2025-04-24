@@ -15,14 +15,15 @@ public class ConversorTemperatura {
             // Menu
             System.out.println("1 - De Celsius para Fahrenheit");
             System.out.println("2 - De Fahrenheit para Celsius");
+            System.out.println("3 - Sair");
 
             // Opção do usuário
-            System.out.print("Opção: ");
+            System.out.print("\nOpção: ");
             op = entrada.nextInt();
 
             if (op == 1) {
                 // Entrada
-                System.out.print("Informe a temperatura em °C: ");
+                System.out.print("Informe a temperatura em °C: "); 
                 cel = entrada.nextDouble();
 
                 // Processamento
@@ -30,6 +31,7 @@ public class ConversorTemperatura {
 
                 // Saída
                 System.out.println("\n" + cel + "°C = " + fah + "°F\n");
+                
             } else if (op == 2) {
                 // Entrada
                 System.out.print("Informe a temperatura em °F: ");
@@ -40,6 +42,11 @@ public class ConversorTemperatura {
 
                 // Saída
                 System.out.println("\n" + fah + "°F = " + cel + "°C\n");
+
+                //saída 3
+              } else if (op == 3) {
+                // Entrada
+                System.out.print("Programa encerrado.");
             }
               
     }
